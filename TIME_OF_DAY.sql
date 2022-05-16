@@ -1,5 +1,5 @@
-use database nandos_anz_dw;
-use schema presentation;
+use database {{ Database }};
+use schema {{ schema }};
 
 create or replace view time_of_day as
 select

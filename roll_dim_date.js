@@ -46,7 +46,7 @@ $$
         }
         
         try {
-             // the current date for datawarehouse is day - 1, as per Nandos requirements
+             // the current date for datawarehouse is day - 1, as per XXXX requirements
              var dw_current_date = 'CURRENT_DATE -1';
                                                          
              var sql_get_curr_fin_year = `SELECT 

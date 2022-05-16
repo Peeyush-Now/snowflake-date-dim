@@ -1,5 +1,8 @@
+use database {{ Database }};
+use schema {{ schema }};
+
 -- Note: The logic for derivation of various columns are maintained in the roll_date_dim()
--- The logic here may not be up to Date.
+-- The logic here may not be up to Date (pun intended)!
 
 CREATE OR REPLACE PROCEDURE transform.GENERATE_DIM_DATE(START_DATE STRING, END_DATE STRING, INITIAL_LOAD BOOLEAN)
     RETURNS STRING

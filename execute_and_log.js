@@ -1,7 +1,7 @@
 //call execute_and_log('test_procedure', 'count_step', 'select count(*) from fact_sales');
 
-use database nandos_anz_dw;
-use schema presentation;
+use database {{ Database }};
+use schema {{ schema }};
 
 create or replace procedure execute_and_log(PROCEDURE_NAME string, STEP_NAME string, SQL_STATEMENT string)
     returns string

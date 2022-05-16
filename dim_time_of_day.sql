@@ -1,6 +1,9 @@
+use database {{ Database }};
+use schema {{ schema }};
+
 -- Dim Time of Day
 
-CREATE OR REPLACE TABLE PRESENTATION.DIM_TIME_OF_DAY AS
+CREATE OR REPLACE TABLE DIM_TIME_OF_DAY AS
     SELECT
         TIME_PK TIME_OF_DAY_KEY
         , HOUR_24 TIME_OF_DAY_HH24
